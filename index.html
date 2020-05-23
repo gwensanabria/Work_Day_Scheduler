@@ -19,6 +19,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets\style.css" />
+    <!-- <script src="assets\script.js"></script> -->
     <title>Work Day Scheduler</title>
   </head>
 
@@ -28,64 +29,73 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
+
+    <button id="clear" class="clearBtn">CLEAR ALL</button>
+
     <div class="container">
       <!-- Timeblocks go here -->
+
       <div class="row">
-        <div class="col-2 hour time-block">9:00AM</div>
-        <textarea id="9" class="col-8 text"></textarea>
-        <button class="col-2 saveBtn"><i class="far fa-save"></i></button>
+        <div class="col-2 hour time-block">9AM</div>
+        <textarea id="input1" class="col-8 textInput"></textarea>
+        <button id="saveNote1" class="col-2 saveBtn"><i class="far fa-save"></i></button>
       </div>
 
       <div class="row">
-        <div class="col-2 hour time-block">10:00AM</div>
-        <textarea id="10" class="col-8 text"></textarea>
-        <button class="col-2 saveBtn"><i class="far fa-save"></i></button>
+        <div class="col-2 hour time-block">10AM</div>
+        <textarea id="input2" class="col-8 textInput"></textarea>
+        <button id="saveNote2" class="col-2 saveBtn"><i class="far fa-save"></i></button>
       </div>
 
       <div class="row">
-        <div class="col-2 hour time-block">11:00AM</div>
-        <textarea id="11" class="col-8 text"></textarea>
-        <button class="col-2 saveBtn"><i class="far fa-save"></i></button>
+        <div class="col-2 hour time-block">11AM</div>
+        <textarea id="input3" class="col-8 textInput"></textarea>
+        <button id="saveNote3" class="col-2 saveBtn"><i class="far fa-save"></i></button>
       </div>
 
       <div class="row">
-        <div class="col-2 hour time-block">12:00PM</div>
-        <textarea id="12" class="col-8 text"></textarea>
-        <button class="col-2 saveBtn"><i class="far fa-save"></i></button>
+        <div class="col-2 hour time-block">12PM</div>
+        <textarea id="input4" class="col-8 textInput"></textarea>
+        <button id="saveNote4" class="col-2 saveBtn"><i class="far fa-save"></i></button>
       </div>
 
       <div class="row">
-        <div class="col-2 hour time-block">1:00PM</div>
-        <textarea id="1" class="col-8 text"></textarea>
-        <button class="col-2 saveBtn"><i class="far fa-save"></i></button>
+        <div class="col-2 hour time-block">1PM</div>
+        <textarea id="input5" class="col-8 textInput"></textarea>
+        <button id="saveNote5" class="col-2 saveBtn"><i class="far fa-save"></i></button>
       </div>
 
       <div class="row">
-        <div class="col-2 hour time-block">2:00PM</div>
-        <textarea id="2" class="col-8 text"></textarea>
-        <button class="col-2 saveBtn"><i class="far fa-save"></i></button>
+        <div class="col-2 hour time-block">2PM</div>
+        <textarea id="input6" class="col-8 textInput"></textarea>
+        <button id="saveNote6" class="col-2 saveBtn"><i class="far fa-save"></i></button>
       </div>
 
       <div class="row">
-        <div class="col-2 hour time-block">3:00PM</div>
-        <textarea id="3" class="col-8 text"></textarea>
-        <button class="col-2 saveBtn"><i class="far fa-save"></i></button>
+        <div class="col-2 hour time-block">3PM</div>
+        <textarea id="input7" class="col-8 textInput"></textarea>
+        <button id="saveNote7" class="col-2 saveBtn"><i class="far fa-save"></i></button>
       </div>
 
       <div class="row">
-        <div class="col-2 hour time-block">4:00PM</div>
-        <textarea id="4" class="col-8 text"></textarea>
-        <button class="col-2 saveBtn"><i class="far fa-save"></i></button>
+        <div class="col-2 hour time-block">4PM</div>
+        <textarea id="input8" class="col-8 textInput"></textarea>
+        <button id="saveNote8" class="col-2 saveBtn"><i class="far fa-save"></i></button>
       </div>
 
       <div class="row">
-        <div class="col-2 hour time-block">5:00PM</div>
-        <textarea id="5" class="col-8 text"></textarea>
-        <button class="col-2 saveBtn"><i class="far fa-save"></i></button>
+        <div class="col-2 hour time-block">5PM</div>
+        <textarea id="input9" class="col-8 textInput"></textarea>
+        <button id="saveNote9" class="col-2 saveBtn"><i class="far fa-save"></i></button>
       </div>
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!-- <script>
+      console.log(moment());
+    </script> -->
+    <script src="assets\script.js"></script>
   </body>
 </html>
