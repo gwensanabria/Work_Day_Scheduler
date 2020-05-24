@@ -9,15 +9,16 @@ $(document).ready(function () {
     $("#currentDay").text(currentDate);
 
 
-    // event listener for save buttons to add to local storage
-    // $(".saveBtn").on("click", function () {
-    //     console.log("save");
-    //     let click = $(this).attr("data-value");
-    //     let eventInput = $(click).val();
-    //     localStorage.setItem(click, eventInput);
-    // });
+    // clear button clears localstorage and reload page
+    $("#clear").click(function(clearReload) {
+        localStorage.clear();
+        location.reload()
+        // console.log(clearReload)
+        });
 
-
+    
+    
+        // save to local storage
     $('#saveBtn').on('click', function () {
         let save = $(this).attr('#input');
         let textInput = $(save).val();
@@ -25,31 +26,30 @@ $(document).ready(function () {
         console.log('click saveBtn')
     })
     
-    //store textArea when saveBtn clicked
+    // //save to local storage
     // $('.saveBtn').on('click', function () {
     //     let textInput = $('.textInput');
-    //     textInput.value = localStorage.getItem('savedContent');
+    //     // textInput.value = localStorage.getItem('savedContent');
     //     localStorage.setItem('savedContent', textInput.value);
     //     console.log("save");
     // });
 
-     //store textArea when saveBtn clicked
+    // //save to local storage
     // $('#saveBtn').on('click', function () {
     //     let textInput = $('#input');
-    //     textInput.value = localStorage.getItem('savedContent');
+    //     // textInput.value = localStorage.getItem('savedContent');
     //     localStorage.setItem('savedContent', textInput.value);
     //     console.log("save");
     // });
 
-    // load from local storage on page load
-
-    // on refresh, loop through time block and grab values from local storage 'getItem' what happens if you don't have a value in a certain time block (this may or may not happen).
+    
     let timeArr = ["#9am", "#10am", "#11am", "#12pm", "#1pm", "#2pm", "#3pm", "#4pm", "#5pm"];
     
     for (let i = 0; i < timeArr.length; i++) {
-        let savedEvent = $('.textInput')
-        console.log('looping through timeArr');        
+        let savedEvent = $('.textInput')       
         $(timeArr[i]).val(localStorage.getItem(timeArr[i]));
+        // console.log(savedEvent)
+        // console.log('looping through timeArr'); 
     };
     
 
@@ -78,11 +78,5 @@ $(document).ready(function () {
     }
     changeColor();
 
-    // clear button clears localstorage and reload page
-    $("#clear").click(function(clearReload) {
-    localStorage.clear();
-    location.reload()
-    // console.log(clearReload)
 });
 
-});
